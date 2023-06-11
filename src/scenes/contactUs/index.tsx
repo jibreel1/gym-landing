@@ -92,7 +92,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                   pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                 })}
               />
-              {errors.name && (
+              {errors.email && (
                 <p className="mt-1 text-primary-500">
                   {errors.email.type === "required" &&
                     "This field is required."}
@@ -109,7 +109,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                   maxLength: 2000,
                 })}
               />
-              {errors.name && (
+              {errors.message && (
                 <p className="mt-1 text-primary-500">
                   {errors.message.type === "required" &&
                     "This field is required."}
